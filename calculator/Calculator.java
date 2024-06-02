@@ -29,7 +29,8 @@ public class Calculator {
             System.out.println(result);
             System.out.println("다시 한번 입력 받으시겠습니까? (yes)/(no)");
             String isYes = sc.nextLine();
-            if (isYes == "yes") {
+            // YES, yes , Yes 전부 받을 수 있게 수정
+            if (isYes.equalsIgnoreCase("yes")) {
                 continue;
             } else {
                 System.out.println("계산기를 종료합니다");
